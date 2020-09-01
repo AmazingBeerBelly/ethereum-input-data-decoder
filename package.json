@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/miguelmota/ethereum-input-data-decoder"
+    "url": "github.com/AmazingBeerBelly/ethereum-input-data-decoder"
   },
   "bugs": {
-    "url": "https://github.com/miguelmota/ethereum-input-data-decoder/issues"
+    "url": "https://github.com/AmazingBeerBelly/ethereum-input-data-decoder/issues"
   },
-  "homepage": "https://github.com/miguelmota/ethereum-input-data-decoder",
+  "homepage": "https://github.com/AmazingBeerBelly/ethereum-input-data-decoder",
   "author": {
     "name": "Miguel Mota",
     "email": "hello@miguelmota.com",

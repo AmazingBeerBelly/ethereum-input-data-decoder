@@ -8,6 +8,8 @@
 
 # ethereum-input-data-decoder
 
+# Clone from [ethereum-input-data-decoder](https://github.com/miguelmota/ethereum-input-data-decoder) and modify to adapt react-native
+
 > Ethereum smart contract transaction input data decoder
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/ethereum-input-data-decoder/master/LICENSE)

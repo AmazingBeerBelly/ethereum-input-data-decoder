@@ -6,7 +6,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var fs = require('fs');
+var fs = require('react-native-fs');
 var ethabi = require('ethereumjs-abi');
 var ethers = require('ethers');
 var Buffer = require('buffer/').Buffer;
