@@ -8,12 +8,12 @@ class InputDataDecoder {
   constructor (prop) {
     this.abi = []
 
-    if (typeof prop === `string`) {
+    if (typeof prop === 'string') {
       this.abi = JSON.parse(fs.readFileSync(prop))
     } else if (prop instanceof Object) {
       this.abi = prop
     } else {
-      throw new TypeError(`Must pass ABI array object or file path to constructor`)
+      throw new TypeError('Must pass ABI array object or file path to constructor')
     }
   }
 
@@ -82,7 +82,7 @@ class InputDataDecoder {
       if (obj.type === 'constructor') return acc
       if (obj.type === 'event') return acc
       const method = obj.name || null
-      let types = obj.inputs ? obj.inputs.map(x => {
+      const types = obj.inputs ? obj.inputs.map(x => {
         if (x.type.includes('tuple')) {
           return x
         } else {
@@ -90,7 +90,7 @@ class InputDataDecoder {
         }
       }) : []
 
-      let names = obj.inputs ? obj.inputs.map(x => {
+      const names = obj.inputs ? obj.inputs.map(x => {
         if (x.type.includes('tuple')) {
           return [x.name, x.components.map(a => a.name)]
         } else {
@@ -231,7 +231,7 @@ function handleInputs (input, tupleArray) {
     return input
   }
 
-  let ret = '(' + input.reduce((acc, x) => {
+  const ret = '(' + input.reduce((acc, x) => {
     if (x.type === 'tuple') {
       acc.push(handleInputs(x.components))
     } else if (x.type === 'tuple[]') {

@@ -26,6 +26,8 @@
 
 ```bash
 npm install ethereum-input-data-decoder
+
+npm install react-native-fs
 ```
 
 ## Getting started
